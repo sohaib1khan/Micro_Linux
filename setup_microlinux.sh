@@ -106,12 +106,6 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
 show_success "Go installed (version ${GO_VERSION})"
 
-# Install Ctop
-show_progress "Installing Ctop"
-CTOP_VERSION=$(curl -s https://api.github.com/repos/bcicen/ctop/releases/latest | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
-curl -fsSL -o /usr/local/bin/ctop "https://github.com/bcicen/ctop/releases/download/v${CTOP_VERSION}/ctop-${CTOP_VERSION}-linux-amd64"
-chmod +x /usr/local/bin/ctop
-show_success "Ctop installed (version ${CTOP_VERSION})"
 
 # Configure vim with plugins using vim-plug
 show_progress "Setting up vim plugins"
@@ -314,9 +308,6 @@ This environment includes a curated selection of development tools, optimized fo
 - Go is installed at `/usr/local/go/bin/go`
 - GOPATH is set to `~/go`
 
-### Container Tools
-- `ctop` - Monitor container metrics
-
 ## 📌 Additional Information
 The setup script automatically detected your distribution type and installed the appropriate packages. All tools are configured with sensible defaults to work well together.
 EOL
@@ -330,7 +321,6 @@ echo "✨ Here's what was installed:"
 echo "  - Vim (with plugins)"
 echo "  - FZF (fuzzy finder)"
 echo "  - Go (version ${GO_VERSION})"
-echo "  - Ctop (version ${CTOP_VERSION})"
 echo "  - Lazygit"
 echo "  - Tree, net-tools, and other essentials"
 echo ""
