@@ -1,6 +1,16 @@
 # 🚀 Micro Linux Development Environment
 
-A powerful, lightweight development environment originally inspired by Termux on Android, now evolved into a versatile toolset for any Linux environment. Perfect for both mobile and desktop development workflows.
+<div align="center">
+
+[![Micro Linux Interactive Documentation](https://img.shields.io/badge/📱_INTERACTIVE-DOCUMENTATION-10b981?style=for-the-badge&labelColor=0f172a&color=059669&logoColor=white)](https://sohaib1khan.github.io/Micro_Linux/)
+
+**📱 Mobile-First Setup | 🛠️ Tool Breakdown | 📝 Vim Mastery | ⌨️ Command Reference**
+
+---
+
+</div>
+
+A powerful, lightweight development environment originally inspired by Termux on Android, now evolved into a versatile toolset for any Linux environment.
 
 ## 🌟 Overview
 
